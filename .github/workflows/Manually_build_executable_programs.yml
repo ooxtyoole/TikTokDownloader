@@ -24,14 +24,6 @@ jobs:
             executable: dist/DouK-Downloader/DouK-Downloader.exe
             artifact: DouK-Downloader_Windows_ARM64
 
-          - os: macos-15-intel
-            executable: dist/DouK-Downloader/DouK-Downloader
-            artifact: DouK-Downloader_macOS_X64
-
-          - os: macos-latest
-            executable: dist/DouK-Downloader/DouK-Downloader
-            artifact: DouK-Downloader_macOS_ARM64
-
     steps:
       - name: 签出存储库
         uses: actions/checkout@v7
